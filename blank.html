@@ -34,9 +34,9 @@
   <div class="py-5 text-center text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg); background-position: center center, center center;	background-size: cover, cover; background-repeat: repeat, repeat;">
     <div class="container">
       <div class="row">
-        <div class="mx-auto p-4 col-md-5">
-          <h1>Compare local treatment prices</h1>
-          <p class="mb-4">Wherever you are</p> <a class="btn btn-lg shadowed btn-success text-center align-items-center mt-4" href="#register" style="">Start search</a><i class="d-block fa fa-angle-down text-center fa-3x pt-0"></i>
+        <div class="mx-auto col-md-5 p-4 pt-4">
+          <h1 class="pt-3">Compare local treatment prices</h1>
+          <p class="mb-2">Wherever you are</p> <a class="btn btn-lg shadowed btn-success text-center align-items-center mt-4" href="#register" style="">Start search</a><i class="d-block fa fa-angle-down text-center fa-3x pt-2"></i>
         </div>
       </div>
     </div>
@@ -58,43 +58,39 @@
             <div class="form-group row"> <label for="inputmailh" class="col-2 col-form-label">Treatment</label>
               <div class="col-10">
                 <div class="form-group row">
-                  <div class="col-10"><input type="text" class="form-control" id="inputmailh" placeholder="Name/ID" style=""></div>
+                  <div class="col-10"><input type="text" class="form-control" id="inputnameid" placeholder="Treatment name / Treatment ID"></div>
                 </div>
               </div>
             </div>
             <div class="form-group row"><label for="inputpasswordh" class="col-2 col-form-label" contenteditable="true">Street Address</label>
               <div class="col-10">
                 <div class="form-group row">
-                  <div class="col-10"><input type="text" class="form-control" id="inputpasswordh"></div>
+                  <div class="col-10"><input type="text" class="form-control" id="inputstreet"></div>
                 </div>
               </div>
             </div>
             <div class="form-group row"><label class="col-2">Zip Code</label>
               <div class="col-10">
                 <div class="form-group row">
-                  <div class="col-10"><input type="text" class="form-control" id="inputpasswordh"></div>
+                  <div class="col-10"><input type="text" class="form-control" id="inputzipcode"></div>
                 </div>
               </div>
             </div>
-            <div class="form-group row"><label class="col-2">City</label>
+            <div class="form-group row"><label class="col-2">Label</label>
               <div class="col-10">
                 <div class="form-group row">
-                  <div class="col-md-12">
-                    <div class="form-group row">
-                      <div class="col-10"><input type="text" class="form-control" id="inputpasswordh"></div>
-                    </div>
-                  </div>
+                  <div class="col-10"><input type="text" class="form-control" id="inputcity"></div>
                 </div>
               </div>
             </div>
             <div class="form-group row"><label class="col-2">State</label>
               <div class="col-10">
                 <div class="form-group row">
-                  <div class="col-10"><input type="text" class="form-control" id="inputmailh" style=""></div>
+                  <div class="col-10"><input type="text" class="form-control" id="inputstate"></div>
                 </div>
               </div>
             </div>
-            <a class="btn navbar-btn mx-2 btn-outline-success" href="#register">Submit</a>
+            <a class="btn navbar-btn btn-outline-success pl-4 pr-4" href="#register">Submit</a>
           </form>
         </div>
       </div>
@@ -113,11 +109,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6" style="">
-          <div class="btn-group">
+          <div class="btn-group" style="">
             <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Sory by</button>
-            <div class="dropdown-menu"> <a class="dropdown-item" href="#">Price&nbsp;</a>
+            <div class="dropdown-menu"> <a class="dropdown-item" href="#">Price: Low to High</a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#" style="">Price: High to Low</a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#" style="">Distance: Closest to Furthest</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="#">Distance: Furthest to Closest</a>
+            </div>
+          </div>
+          <div class="btn-group" style="">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" contenteditable="true"> Distance</button>
+            <div class="dropdown-menu"> <a class="dropdown-item" href="#">5 miles</a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#" style="">10 miles</a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#" style="">20 miles</a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">50 miles</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">100 miles</a>
             </div>
           </div>
           <div class="list-group">
@@ -154,22 +162,27 @@
   <div class="py-3">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center d-md-flex align-items-center"> <i class="d-block fa fa-stop-circle fa-2x mr-md-5 text-primary"></i>
-          <ul class="nav mx-md-auto d-flex justify-content-center">
-            <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">Features</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">FAQ</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
-          </ul>
-          <div class="row">
-            <div class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2"> <a href="#">
-                <i class="d-block fa fa-facebook-official text-muted fa-lg mx-2"></i>
-              </a> <a href="#">
-                <i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
-              </a> <a href="#">
-                <i class="d-block fa fa-twitter text-muted fa-lg ml-2"></i>
-              </a> </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="col-md-12 text-center d-md-flex align-items-center">
+            <ul class="nav mx-md-auto d-flex justify-content-center">
+              <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">Features</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">FAQ</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+            </ul>
           </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-md-between my-2 col-md-6 align-items-center justify-content-center"> <a href="#">
+              <i class="d-block fa fa-facebook-official text-muted fa-lg mx-2"></i>
+            </a> <a href="#">
+              <i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
+            </a> <a href="#">
+              <i class="d-block fa fa-twitter text-muted fa-lg ml-2"></i>
+            </a> </div>
         </div>
       </div>
       <div class="row">
